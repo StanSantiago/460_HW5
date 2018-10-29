@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Maintenence Request Example</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Request Submition</h2>
+        <p>
+            Submit a request for maintenence.
+        </p>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("Click here! &raquo;"), "Index", "ReqForm", new { @class = "elements" }, null)</p>
+    </div>
+    <div class="col-md-6">
+        <h2>Request Listing</h2>
+        <p>
+            View the requested maintenence.
+        </p>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("Click here! &raquo;"), "Listing", "Home", new { @class = "elements" })</p>
+    </div>
+</div>
